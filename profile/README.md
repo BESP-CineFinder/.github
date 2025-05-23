@@ -24,13 +24,21 @@
 - **Database:**
     - MySQL (메인 데이터베이스)
     - Elasticsearch (위치 기반 검색)
-
+    - Redis (캐싱 및 JWT 토큰, DB lock, 세션 관리)
+- **Message Queue:**
+    - Kafka (비동기 데이터 처리, 로그 수집 등)
+    - RabbitMQ (경량 메시지 처리 및 알림 시스템 등)
+- **Realtime Communication:**
+    - WebSocket (실시간 데이터 전송, 채팅 등)
+- **Authentication & Authorization:**
+    - Spring Security (보안 설정 및 접근 제어)
+    - JWT (토큰 기반 인증 및 인가)
+    - OAuth 2.0 (소셜 로그인 연동 – Kakao 로그인 구현)
 - **API:** RESTful API
 
 ### DevOps
 - **Version Control:** Git
 - **CI/CD:** Docker
-- **Server:** AWS EC2
 - **Proxy:** Nginx
 
 ### External APIs
@@ -38,6 +46,8 @@
 - 롯데시네마 API
 - 메가박스 API
 - Daum 영화 API
+- KOBIS API
+- KMDB API
 
 ## 🎯 시스템 구조
 ```mermaid
